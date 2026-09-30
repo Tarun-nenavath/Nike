@@ -6,7 +6,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      vmimage: Vmssagent
+      vmimage: 'Vmssagent'
     steps:
     - task: Npm@1
       inputs:
