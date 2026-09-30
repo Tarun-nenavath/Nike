@@ -6,8 +6,8 @@ stages:
   jobs:
   - job: Build
     pool:
-      pool:
-        name: 'Vmssagent'
+      name: 'Vmssagent'
+
     steps:
     - task: Npm@1
       inputs:
