@@ -9,6 +9,15 @@ stages:
       name: 'Vmssagent'
 
     steps:
+    # - task: NodeTool@0
+    #   inputs:
+    #     versionSpec: '20.x'
+    #   displayName: 'Install Node.js'
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '20.x'
+      displayName: 'Install Node.js'
+
     - task: Npm@1
       inputs:
         command: 'custom'
