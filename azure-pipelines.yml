@@ -7,6 +7,7 @@ stages:
   - job: Build
     pool:
       name: 'Vmssagent'
+      # image: 'ubuntu-latest'
 
     steps:
     # - task: NodeTool@0
